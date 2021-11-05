@@ -47,7 +47,7 @@ class worksState extends State<works> {
                 color: Colors.white,
                 borderRadius: BorderRadius.all(Radius.circular(10))),
             child: Image.asset(
-              'pics/fne.jpg'),
+              'pics/works.png'),
             ),
           Padding(padding: EdgeInsets.all(5)),
           Container(
