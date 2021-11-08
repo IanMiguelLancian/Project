@@ -1,3 +1,5 @@
+import 'dart:ui';
+
 import 'package:flutter/material.dart';
 import 'dashboard.dart';
 
@@ -25,11 +27,16 @@ class bgState extends State<bg> {
   Widget build(BuildContext context) {
     return new Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.brown,
-        title: Text("Nietzsche's background"),
+        backgroundColor: Colors.brown[400],
+        centerTitle: true,
+        title: Text(
+          "Nietzsche's background",
+          style: TextStyle(color: Colors.black),
+          ),
         actions: <Widget>[
           IconButton(
               icon: Icon(Icons.home),
+              color: Colors.white,
               onPressed: () {
                 navigatetopushdash();
               }),
@@ -58,7 +65,7 @@ class bgState extends State<bg> {
             child: Padding(
               padding: EdgeInsets.all(10),
               child: Text(
-                'Jasdwadsw',
+                'Jasdwa',
                 style: TextStyle(fontSize: 20, color: Colors.black),
               ),
             ),
