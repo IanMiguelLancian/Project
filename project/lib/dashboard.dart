@@ -1,3 +1,5 @@
+import 'dart:ui';
+
 import 'package:flutter/material.dart';
 import 'package:project/splash.dart';
 import 'bg.dart';
@@ -23,9 +25,11 @@ class _dashboardState extends State<dashboard> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.brown,
+        backgroundColor: Colors.brown[400],
+        centerTitle: true,
         title: Text(
           'Friedrich Nietzsche',
+          style: TextStyle(color: Colors.black),
         ),
       ),
       backgroundColor: Colors.white,
@@ -59,7 +63,7 @@ class _dashboardState extends State<dashboard> {
                       "Nietzsche's background",
                       style: TextStyle(
                         fontSize: 20,
-                        color: Colors.white,
+                        color: Colors.black,
                       ),
                     ),
                   ),
@@ -83,7 +87,7 @@ class _dashboardState extends State<dashboard> {
                       "Nietzsche's works",
                       style: TextStyle(
                         fontSize: 20,
-                        color: Colors.white,
+                        color: Colors.black,
                       ),
                     ),
                   ),
