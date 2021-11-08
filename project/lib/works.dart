@@ -1,4 +1,6 @@
 
+import 'dart:ui';
+
 import 'package:flutter/material.dart';
 import 'dashboard.dart';
 
@@ -26,11 +28,16 @@ class worksState extends State<works> {
   Widget build(BuildContext context) {
     return new Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.brown,
-        title: Text("Nietzsche's works"),
+        backgroundColor: Colors.brown[400],
+        centerTitle: true,
+        title: Text(
+          "Nietzsche's works",
+          style: TextStyle(color: Colors.black),
+        ),
         actions: <Widget>[
           IconButton(
               icon: Icon(Icons.home),
+              color: Colors.white,
               onPressed: () {
                 navigatetopushdash();
               }),
