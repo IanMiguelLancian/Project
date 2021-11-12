@@ -57,7 +57,7 @@ class worksState extends State<works> {
             ),
           Padding(padding: EdgeInsets.all(5)),
           Container(
-            height: 250,
+            height: 275,
             width: 700,
             decoration: BoxDecoration(
                 color: Colors.brown[200],
@@ -67,9 +67,12 @@ class worksState extends State<works> {
               child: Text(
                 '- The Birth of Tragedy (1872)'
                 +'\n- Human, All Too Human (1878)'
+                +'\n- Daybreak (1881)'
+                +'\n- The Gay Science (1882)'
                 +'\n- Thus Spoke Zarathustra (Between 1883-1885)'
                 +'\n- Beyond Good and Evil (1886)'
                 +'\n- The Genealogy of Morals (1887)'
+                +'\n- The Antichrist (1888)'
                 +'\n- Twilight of the Idols (1889)',
                 style: TextStyle(fontSize: 17, color: Colors.black),
               ),
