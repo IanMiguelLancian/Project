@@ -29,7 +29,6 @@ class worksState extends State<works> {
     return new Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.brown[400],
-        centerTitle: true,
         title: Text(
           "Nietzsche's works",
           style: TextStyle(color: Colors.black),
@@ -37,7 +36,7 @@ class worksState extends State<works> {
         actions: <Widget>[
           IconButton(
               icon: Icon(Icons.home),
-              color: Colors.white,
+              color: Colors.black,
               onPressed: () {
                 navigatetopushdash();
               }),
@@ -58,7 +57,7 @@ class worksState extends State<works> {
             ),
           Padding(padding: EdgeInsets.all(5)),
           Container(
-            height: 110,
+            height: 250,
             width: 700,
             decoration: BoxDecoration(
                 color: Colors.brown[200],
@@ -66,8 +65,13 @@ class worksState extends State<works> {
             child: Padding(
               padding: EdgeInsets.all(10),
               child: Text(
-                'Jasdwadsw',
-                style: TextStyle(fontSize: 20, color: Colors.black),
+                '- The Birth of Tragedy (1872)'
+                +'\n- Human, All Too Human (1878)'
+                +'\n- Thus Spoke Zarathustra (Between 1883-1885)'
+                +'\n- Beyond Good and Evil (1886)'
+                +'\n- The Genealogy of Morals (1887)'
+                +'\n- Twilight of the Idols (1889)',
+                style: TextStyle(fontSize: 17, color: Colors.black),
               ),
             ),
           ),
