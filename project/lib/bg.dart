@@ -28,7 +28,6 @@ class bgState extends State<bg> {
     return new Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.brown[400],
-        centerTitle: true,
         title: Text(
           "Nietzsche's background",
           style: TextStyle(color: Colors.black),
@@ -36,7 +35,7 @@ class bgState extends State<bg> {
         actions: <Widget>[
           IconButton(
               icon: Icon(Icons.home),
-              color: Colors.white,
+              color: Colors.black,
               onPressed: () {
                 navigatetopushdash();
               }),
@@ -57,7 +56,7 @@ class bgState extends State<bg> {
             ),
           Padding(padding: EdgeInsets.all(5)),
           Container(
-            height: 110,
+            height: 400,
             width: 700,
             decoration: BoxDecoration(
                 color: Colors.brown[200],
@@ -65,8 +64,11 @@ class bgState extends State<bg> {
             child: Padding(
               padding: EdgeInsets.all(10),
               child: Text(
-                'Jasdwa',
-                style: TextStyle(fontSize: 20, color: Colors.black),
+                'German Philosopher Friedriche Nietzsche was born on October 15, 1844 at Röcken bei Lützen, a small village in Prussia, Germany.'
+                +'\nIn 1869, Nietzsche took a position as a professor of classical philology at the University of Basel in Switzerland. During his time of being a professor, he published his first 2 books, The Birth of Tragedy(1872) and Human, All To Human(1878).'
+                +'\nHe distanced himself to his profession in that time and takes interest on the values underlying moder-day civilization.'
+                +'\n\nEducation: '+'\nSchulptra school'+'\nUniversity of Bonn(1864)'+'\nUniversity of Leipzig(Studied philology)',
+                style: TextStyle(fontSize: 16, color: Colors.black),
               ),
             ),
           ),
